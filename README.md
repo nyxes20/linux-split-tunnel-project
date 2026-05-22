@@ -20,7 +20,7 @@ My setup (adjust for your own setup):
 
 ----------------------------------------------------
 
-This guide will assume you have a running and working docker installation on a Debian-based system.
+This guide will assume you have a running and working Docker installation on a Debian-based system.
 Useful Linux networking commands you might wanna know:
 
 ip a --> gets your current ip address and information, you can add flags like -br to get a brief, and -4 to get only ipv4 info.
@@ -34,8 +34,6 @@ sudo docker network rm <id or name> --> deletes your docker network in case need
 
 ----------------------------------------------------
 
-----------------------------------------------------
-
 STEP 1 — CREATE A MACVLAN NETWORK FOR DOCKER
 -------------------------------------------
 We’ll create a macvlan network with a specific IP range.
@@ -46,7 +44,7 @@ Command:
 sudo docker network create -d macvlan   --subnet 192.168.1.0/24   --gateway 192.168.1.1   --ip-range 192.168.1.192/27   --aux-address 'host=192.168.1.223'   macvlan_docker
 
 Notes:
-- Replace IPs and names with your own.
+- Replace the IPs and names with your own.
 - The range 192.168.1.192–223 will be used by Docker containers.
 - The reserved IP 192.168.1.223 is for the host macvlan interface.
 
