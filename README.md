@@ -36,7 +36,7 @@ sudo docker network rm <id or name> --> deletes your docker network in case need
 
 ----------------------------------------------------
 
-STEP 1 — CREATE MACVLAN NETWORK FOR DOCKER
+STEP 1 — CREATE A MACVLAN NETWORK FOR DOCKER
 -------------------------------------------
 We’ll create a macvlan network with a specific IP range.
 The --aux-address flag reserves one static IP for the host.
