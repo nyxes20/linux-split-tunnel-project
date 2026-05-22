@@ -9,7 +9,7 @@ This project was made to help me unblock certian websites, manage what goes thro
 NETWORK OVERVIEW
 ----------------
 
-My setup (adjust for your own network):
+My setup (adjust for your own setup):
 
 - Home network: 192.168.1.0/24
 - Server (host): 192.168.1.30/32  → interface: eno1
@@ -20,8 +20,7 @@ My setup (adjust for your own network):
 
 ----------------------------------------------------
 
-This guide will assume you have a running and working docker installation, the steps were applied on a Debian based machine.
-
+This guide will assume you have a running and working docker installation on a Debian-based system.
 Useful Linux networking commands you might wanna know:
 
 ip a --> gets your current ip address and information, you can add flags like -br to get a brief, and -4 to get only ipv4 info.
